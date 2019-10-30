@@ -6,13 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.kshu.calendarpager.CalendarPagerLayout.CalendarPagerLayout
-        android:id="@+id/calendar_pager_layout"
+    <com.kshu.calendarpagerlayout.CalendarPagerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:has_month_picker="true"
-        app:has_daily_list="true">
-
-    </com.kshu.calendarpager.CalendarPagerLayout.CalendarPagerLayout>
+        app:has_daily_list="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

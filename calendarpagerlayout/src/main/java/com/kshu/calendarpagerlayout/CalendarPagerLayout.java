@@ -1,4 +1,4 @@
-package com.kshu.calendarpager.CalendarPagerLayout;
+package com.kshu.calendarpagerlayout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,29 +9,26 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-import com.kshu.calendarpager.R;
-
 public class CalendarPagerLayout extends LinearLayout{
     boolean hasMonthPicker;
     CalendarMonthPicker mMonthPicker;
-
     boolean hasDailyList;
 
     public CalendarPagerLayout(Context context) {
         super(context);
-        setupView(context);
+        setupView();
     }
 
     public CalendarPagerLayout(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setupAttrs(attrs);
-        setupView(context);
+        setupView();
     }
 
     public CalendarPagerLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setupAttrs(attrs);
-        setupView(context);
+        setupView();
     }
 
     private void setupAttrs(@Nullable AttributeSet set){
@@ -43,10 +40,10 @@ public class CalendarPagerLayout extends LinearLayout{
         typedArray.recycle();
     }
 
-    private void setupView(Context context) {
+    private void setupView() {
         setOrientation(VERTICAL);
         if(hasMonthPicker) {
-            mMonthPicker = (CalendarMonthPicker) LayoutInflater.from(context).inflate(R.layout.calendar_month_picker, (ViewGroup) getRootView(), false);
+            mMonthPicker = (CalendarMonthPicker) LayoutInflater.from(getContext()).inflate(R.layout.calendar_month_picker, (ViewGroup)getRootView(), false);
             addView(mMonthPicker);
         }
 

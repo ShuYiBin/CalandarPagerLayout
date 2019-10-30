@@ -1,10 +1,10 @@
-package com.kshu.calendarpager.CalendarPagerLayout;
+package com.kshu.calendarpagerlayout;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
-public class CalendarMonthPicker extends RelativeLayout {
+public class CalendarMonthPicker  extends RelativeLayout {
 
     public CalendarMonthPicker(Context context) {
         super(context);
