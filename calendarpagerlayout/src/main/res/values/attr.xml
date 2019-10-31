@@ -3,5 +3,6 @@
     <declare-styleable name="CalendarPagerLayout">
         <attr name="has_month_picker" format="boolean"/>
         <attr name="has_daily_list" format="boolean"/>
+        <attr name="date" format="string"/>
     </declare-styleable>
 </resources>

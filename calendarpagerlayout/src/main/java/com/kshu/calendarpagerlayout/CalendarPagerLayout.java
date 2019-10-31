@@ -9,10 +9,13 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
+import java.util.Date;
+
 public class CalendarPagerLayout extends LinearLayout{
     boolean hasMonthPicker;
-    CalendarMonthPicker mMonthPicker;
     boolean hasDailyList;
+    Date today;
+    MonthPicker monthPicker;
 
     public CalendarPagerLayout(Context context) {
         super(context);
@@ -33,18 +36,19 @@ public class CalendarPagerLayout extends LinearLayout{
 
     private void setupAttrs(@Nullable AttributeSet set){
         if (set == null) return;
-
         TypedArray typedArray = getContext().obtainStyledAttributes(set, R.styleable.CalendarPagerLayout);
         hasMonthPicker = typedArray.getBoolean(R.styleable.CalendarPagerLayout_has_month_picker, true);
         hasDailyList = typedArray.getBoolean(R.styleable.CalendarPagerLayout_has_daily_list, true);
+        today = new Date();
         typedArray.recycle();
     }
 
-    private void setupView() {
+    public void setupView() {
         setOrientation(VERTICAL);
         if(hasMonthPicker) {
-            mMonthPicker = (CalendarMonthPicker) LayoutInflater.from(getContext()).inflate(R.layout.calendar_month_picker, (ViewGroup)getRootView(), false);
-            addView(mMonthPicker);
+            monthPicker = (MonthPicker) LayoutInflater.from(getContext()).inflate(R.layout.calendar_month_picker, (ViewGroup)getRootView(), false);
+            monthPicker.setupView(today);
+            addView(monthPicker);
         }
 
         if(hasDailyList) {
