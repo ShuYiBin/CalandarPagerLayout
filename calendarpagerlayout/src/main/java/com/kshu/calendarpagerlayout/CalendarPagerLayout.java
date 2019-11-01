@@ -12,10 +12,11 @@ import androidx.annotation.Nullable;
 import java.util.Date;
 
 public class CalendarPagerLayout extends LinearLayout{
-    boolean hasMonthPicker;
     boolean hasDailyList;
+    String monthFormat;
     Date today;
-    MonthPicker monthPicker;
+
+    MonthView monthView;
 
     public CalendarPagerLayout(Context context) {
         super(context);
@@ -37,19 +38,19 @@ public class CalendarPagerLayout extends LinearLayout{
     private void setupAttrs(@Nullable AttributeSet set){
         if (set == null) return;
         TypedArray typedArray = getContext().obtainStyledAttributes(set, R.styleable.CalendarPagerLayout);
-        hasMonthPicker = typedArray.getBoolean(R.styleable.CalendarPagerLayout_has_month_picker, true);
         hasDailyList = typedArray.getBoolean(R.styleable.CalendarPagerLayout_has_daily_list, true);
+        monthFormat = typedArray.getString(R.styleable.CalendarPagerLayout_month_format);
+        if(monthFormat==null || monthFormat.isEmpty()) monthFormat = "MMMM yyyy";
+
         today = new Date();
         typedArray.recycle();
     }
 
     public void setupView() {
         setOrientation(VERTICAL);
-        if(hasMonthPicker) {
-            monthPicker = (MonthPicker) LayoutInflater.from(getContext()).inflate(R.layout.calendar_month_picker, (ViewGroup)getRootView(), false);
-            monthPicker.setupView(today);
-            addView(monthPicker);
-        }
+        monthView = (MonthView) LayoutInflater.from(getContext()).inflate(R.layout.month_view, (ViewGroup)getRootView(), false);
+        monthView.setupView(today, monthFormat);
+        addView(monthView);
 
         if(hasDailyList) {
 

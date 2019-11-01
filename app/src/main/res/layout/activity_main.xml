@@ -10,7 +10,6 @@
         android:id="@+id/calendar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:has_month_picker="true"
         app:has_daily_list="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

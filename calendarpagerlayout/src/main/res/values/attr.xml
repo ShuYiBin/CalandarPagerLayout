@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="CalendarPagerLayout">
-        <attr name="has_month_picker" format="boolean"/>
         <attr name="has_daily_list" format="boolean"/>
+        <attr name="month_format" format="string"/>
         <attr name="date" format="string"/>
     </declare-styleable>
 </resources>

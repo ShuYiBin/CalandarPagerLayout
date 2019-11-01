@@ -9,19 +9,19 @@ import androidx.viewpager.widget.PagerAdapter;
 import java.util.LinkedList;
 
 public class MonthPagerAdapter extends PagerAdapter {
-    private LinkedList<View> monthViews;
+    private LinkedList<View> views;
 
-    public LinkedList<View> getMonthViews() {
-        return monthViews;
+    public LinkedList<View> getViews() {
+        return views;
     }
 
     public MonthPagerAdapter(LinkedList<View> views) {
-        monthViews = views;
+        this.views = views;
     }
 
     @Override
     public int getCount() {
-        return monthViews.size();
+        return views.size();
     }
 
     @Override
@@ -31,8 +31,8 @@ public class MonthPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        container.addView(monthViews.get(position));
-        return monthViews.get(position);
+        container.addView(views.get(position));
+        return views.get(position);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class MonthPagerAdapter extends PagerAdapter {
 
     @Override
     public int getItemPosition(Object object) {
-        int index = monthViews.indexOf(object);
+        int index = views.indexOf(object);
         if(index == -1)
             return POSITION_NONE;
         else
