@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class DayListAdapter extends RecyclerView.Adapter<DayListAdapter.ViewHolder> {
-    ArrayList<String> days;
-    int start;
-    int end;
+    private ArrayList<String> days;
+    private int start;
+    private int end;
 
     public void setStart(int start) {
         this.start = start;
@@ -36,6 +36,9 @@ public class DayListAdapter extends RecyclerView.Adapter<DayListAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.day.setText(days.get(position));
+        if(position < start || position > end) {
+            holder.day.setAlpha(0.5f);
+        }
     }
 
     @Override

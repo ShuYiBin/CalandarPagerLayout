@@ -1,11 +1,10 @@
 package com.kshu.calendarpagerlayout;
 
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 public class MonthPagerChangeListener implements ViewPager.OnPageChangeListener {
-    MonthView monthView;
-    PagerAdapter pagerAdapter;
+    private MonthView monthView;
+    private MonthPagerAdapter pagerAdapter;
 
     public MonthPagerChangeListener(MonthView monthView, MonthPagerAdapter pagerAdapter) {
         this.monthView = monthView;

@@ -15,7 +15,6 @@ public class CalendarPagerLayout extends LinearLayout{
     boolean hasDailyList;
     String monthFormat;
     Date today;
-
     MonthView monthView;
 
     public CalendarPagerLayout(Context context) {

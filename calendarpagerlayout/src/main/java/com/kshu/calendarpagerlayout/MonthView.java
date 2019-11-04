@@ -36,6 +36,10 @@ public class MonthView extends RelativeLayout {
     View nextMonth;
     LinkedList<View> monthViews;
 
+    public View getCurrentMonth() {
+        return currentMonth;
+    }
+
     public MonthView(Context context) {
         super(context);
     }
@@ -156,7 +160,7 @@ public class MonthView extends RelativeLayout {
 
         DayListAdapter dayListAdapter = new DayListAdapter(days);
         dayListAdapter.setStart(dayofWeek-1);
-        dayListAdapter.setEnd(dayofWeek+dayofMonth-1);
+        dayListAdapter.setEnd(dayofWeek+dayofMonth-2);
         dayList.setAdapter(dayListAdapter);
     }
 
@@ -166,13 +170,18 @@ public class MonthView extends RelativeLayout {
         calendar.add(Calendar.MONTH, -1);
         current = calendar.getTime();
 
-        View lastMonth = LayoutInflater.from(getContext()).inflate(R.layout.month_pager_view, (ViewGroup)getRootView(), false);
+        View newLastMonth = LayoutInflater.from(getContext()).inflate(R.layout.month_pager_view, (ViewGroup)getRootView(), false);
         calendar.setTime(current);
         calendar.add(Calendar.MONTH, -1);
-        ((TextView)lastMonth.findViewById(R.id.month_text)).setText(monthFormat.format(calendar.getTime()));
-        newDayView(lastMonth, calendar);
+        ((TextView)newLastMonth.findViewById(R.id.month_text)).setText(monthFormat.format(calendar.getTime()));
+        newDayView(newLastMonth, calendar);
 
-        pagerAdapter.getViews().addFirst(lastMonth);
+        View temp = currentMonth;
+        currentMonth = lastMonth;
+        nextMonth = temp;
+        lastMonth = newLastMonth;
+
+        pagerAdapter.getViews().addFirst(newLastMonth);
         pagerAdapter.getViews().removeLast();
     }
 
@@ -182,13 +191,18 @@ public class MonthView extends RelativeLayout {
         calendar.add(Calendar.MONTH, 1);
         current = calendar.getTime();
 
-        View nextMonth = LayoutInflater.from(getContext()).inflate(R.layout.month_pager_view, (ViewGroup)getRootView(), false);
+        View newNextMonth = LayoutInflater.from(getContext()).inflate(R.layout.month_pager_view, (ViewGroup)getRootView(), false);
         calendar.setTime(current);
         calendar.add(Calendar.MONTH, 1);
-        ((TextView)nextMonth.findViewById(R.id.month_text)).setText(monthFormat.format(calendar.getTime()));
-        newDayView(nextMonth, calendar);
+        ((TextView)newNextMonth.findViewById(R.id.month_text)).setText(monthFormat.format(calendar.getTime()));
+        newDayView(newNextMonth, calendar);
 
-        pagerAdapter.getViews().addLast(nextMonth);
+        View temp = currentMonth;
+        currentMonth = nextMonth;
+        nextMonth = newNextMonth;
+        lastMonth = temp;
+
+        pagerAdapter.getViews().addLast(newNextMonth);
         pagerAdapter.getViews().removeFirst();
     }
 }
