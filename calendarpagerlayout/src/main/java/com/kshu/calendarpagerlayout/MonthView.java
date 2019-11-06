@@ -158,7 +158,12 @@ public class MonthView extends RelativeLayout {
             }
         }
 
-        DayListAdapter dayListAdapter = new DayListAdapter(days);
+        calendar.add(Calendar.MONTH, 1);
+        boolean isCurrentMonth = false;
+        if(calendar.get(Calendar.MONTH)+1 == current.getMonth()+1) {
+            isCurrentMonth = true;
+        }
+        DayListAdapter dayListAdapter = new DayListAdapter(viewPager, dayList, days, isCurrentMonth);
         dayListAdapter.setStart(dayofWeek-1);
         dayListAdapter.setEnd(dayofWeek+dayofMonth-2);
         dayList.setAdapter(dayListAdapter);
