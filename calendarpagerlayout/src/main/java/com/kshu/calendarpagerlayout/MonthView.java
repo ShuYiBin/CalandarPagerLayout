@@ -160,7 +160,8 @@ public class MonthView extends RelativeLayout {
 
         calendar.add(Calendar.MONTH, 1);
         boolean isCurrentMonth = false;
-        if(calendar.get(Calendar.MONTH)+1 == current.getMonth()+1) {
+        Date today = new Date();
+        if(calendar.get(Calendar.MONTH) == today.getMonth()) {
             isCurrentMonth = true;
         }
         DayListAdapter dayListAdapter = new DayListAdapter(viewPager, dayList, days, isCurrentMonth);
