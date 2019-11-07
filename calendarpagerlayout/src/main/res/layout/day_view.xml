@@ -7,18 +7,18 @@
 
     <ImageView
         android:id="@+id/today_background"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/today_background"
+        android:background="@drawable/today_background"
         android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/selected_day_background"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/selected_day_background"
+        android:background="@drawable/selected_day_background"
         android:visibility="gone"/>
 
     <TextView

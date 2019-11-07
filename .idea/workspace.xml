@@ -10,7 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="034a574d-d3ed-44fc-a992-73a65e510031" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kshu/calendarpager/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kshu/calendarpager/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarPagerLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarPagerLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthView.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/day_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/day_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/attr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/attr.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,21 +49,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/day_view.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kshu/calendarpager/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="29" lean-forward="true" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="300">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#645#834#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarPagerLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+              <folding>
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="166" column="9" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+            <state relative-caret-position="482">
+              <caret line="167" column="132" selection-start-line="167" selection-start-column="132" selection-end-line="167" selection-end-column="132" />
+              <folding>
+                <element signature="e#1142#1143#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -86,22 +134,25 @@
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarMonthPagerAdapter.java" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarPagerViewModel.java" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/calendar_month_picker_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/kshu/calendarpager/MainActivity.java" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthPagerAdapter.java" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthPicker.java" />
-        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/attr.xml" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/month_view.xml" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/build.gradle" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/month_pager_view.xml" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthPagerChangeListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/drawable/day_background.xml" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/drawable/selected_day_background.xml" />
-        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/day_view.xml" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarViewModel.java" />
+        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/drawable/today_background.xml" />
+        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/day_view.xml" />
+        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/attr.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarPagerLayout.java" />
-        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListAdapter.java" />
+        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kshu/calendarpager/MainActivity.java" />
         <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthView.java" />
+        <option value="$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListAdapter.java" />
       </list>
     </option>
   </component>
@@ -123,6 +174,21 @@
           <expand>
             <path>
               <item name="CalendarPager" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="CalendarPager" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="CalendarPager" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="calendarpager" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalendarPager" type="1abcf292:AndroidViewProjectNode" />
               <item name="calendarpagerlayout" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
@@ -135,23 +201,6 @@
               <item name="calendarpagerlayout" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="calendarpagerlayout" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalendarPager" type="1abcf292:AndroidViewProjectNode" />
-              <item name="calendarpagerlayout" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="CalendarPager" type="1abcf292:AndroidViewProjectNode" />
-              <item name="calendarpagerlayout" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="CalendarPager" type="1abcf292:AndroidViewProjectNode" />
-              <item name="calendarpagerlayout" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -174,7 +223,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Samsung_S10_plus" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-04T02:12:35.619Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-07T02:52:39.751Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ScreenshotViewer.SavePath" value="$PROJECT_DIR$/../Downloads" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../Library/Android/sdk" />
@@ -183,6 +232,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.kshu.calendarpagerlayout" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.kshu.calendarpagerlayout" />
     </key>
@@ -380,7 +432,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32908705" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.33227175" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.42675158" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32908705" />
       <window_info anchor="bottom" id="Android Profiler" order="3" weight="0.32908705" />
       <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.29617834" />
@@ -554,16 +606,6 @@
     <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/attr.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthPagerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -576,14 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -591,34 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kshu/calendarpager/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthPagerChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/drawable/ic_launcher_background.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/drawable/today_background.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -641,45 +651,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarPagerLayout.java">
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/drawable/today_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/day_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/values/attr.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthPagerChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="167" column="132" selection-start-line="167" selection-start-column="132" selection-end-line="167" selection-end-column="132" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/DayListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        <state relative-caret-position="309">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/CalendarPagerLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1462#1652#0" expanded="true" />
-            <element signature="e#1651#1652#0" expanded="true" />
-            <element signature="e#1779#1969#0" expanded="true" />
-            <element signature="e#1968#1969#0" expanded="true" />
-            <element signature="e#2035#2248#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/res/layout/day_view.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kshu/calendarpager/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="29" lean-forward="true" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendarpagerlayout/src/main/java/com/kshu/calendarpagerlayout/MonthView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="166" column="9" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+        <state relative-caret-position="300">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#645#834#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

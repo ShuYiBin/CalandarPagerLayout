@@ -21,11 +21,8 @@ import java.util.LinkedList;
 import java.util.Locale;
 
 public class MonthView extends RelativeLayout {
-    //Attrs
     Date current;
     SimpleDateFormat monthFormat;
-
-    //View
     ImageView lastMonthBtn;
     ImageView nextMonthBtn;
     ViewPager viewPager;
@@ -35,9 +32,14 @@ public class MonthView extends RelativeLayout {
     View currentMonth;
     View nextMonth;
     LinkedList<View> monthViews;
+    DayListener dayListener;
 
     public View getCurrentMonth() {
         return currentMonth;
+    }
+
+    public void setDayListener(DayListener listener) {
+        dayListener = listener;
     }
 
     public MonthView(Context context) {
@@ -64,7 +66,6 @@ public class MonthView extends RelativeLayout {
         viewPager.setCurrentItem(1, true);
         pagerChangeListener = new MonthPagerChangeListener(this, pagerAdapter);
         viewPager.addOnPageChangeListener(pagerChangeListener);
-
     }
 
     private void setupMonthPicker() {
@@ -164,7 +165,7 @@ public class MonthView extends RelativeLayout {
         if(calendar.get(Calendar.MONTH) == today.getMonth()) {
             isCurrentMonth = true;
         }
-        DayListAdapter dayListAdapter = new DayListAdapter(viewPager, dayList, days, isCurrentMonth);
+        DayListAdapter dayListAdapter = new DayListAdapter(viewPager, dayList, days, isCurrentMonth, dayListener, calendar.getTime());
         dayListAdapter.setStart(dayofWeek-1);
         dayListAdapter.setEnd(dayofWeek+dayofMonth-2);
         dayList.setAdapter(dayListAdapter);

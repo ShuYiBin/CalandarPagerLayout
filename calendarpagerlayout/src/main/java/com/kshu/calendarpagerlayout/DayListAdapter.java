@@ -21,6 +21,8 @@ public class DayListAdapter extends RecyclerView.Adapter<DayListAdapter.ViewHold
     private int start;
     private int end;
     private boolean isCurrentMonth;
+    private Date current;
+    private DayListener dayListener;
 
     public void setStart(int start) {
         this.start = start;
@@ -30,11 +32,13 @@ public class DayListAdapter extends RecyclerView.Adapter<DayListAdapter.ViewHold
         this.end = end;
     }
 
-    public DayListAdapter(ViewPager viewPager, RecyclerView dayList, ArrayList<String> days, boolean isCurrentMonth) {
+    public DayListAdapter(ViewPager viewPager, RecyclerView dayList, ArrayList<String> days, boolean isCurrentMonth, DayListener listener, Date current) {
         this.viewPager = viewPager;
         this.dayList = dayList;
         this.days = days;
         this.isCurrentMonth = isCurrentMonth;
+        this.dayListener = listener;
+        this.current = current;
     }
 
     @NonNull
@@ -44,7 +48,7 @@ public class DayListAdapter extends RecyclerView.Adapter<DayListAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
         holder.day.setText(days.get(position));
         if(position < start) {
             holder.dayView.setAlpha(0.5f);
@@ -72,6 +76,8 @@ public class DayListAdapter extends RecyclerView.Adapter<DayListAdapter.ViewHold
                 public void onClick(View view) {
                     clearDayBackground();
                     holder.selectedDayBackground.setVisibility(View.VISIBLE);
+                    current.setDate(position-start+1);
+                    dayListener.onDayClick(current);
                 }
             });
         }
