@@ -21,6 +21,7 @@ import java.util.LinkedList;
 import java.util.Locale;
 
 public class MonthView extends RelativeLayout {
+    Calendar calendar;
     Date current;
     SimpleDateFormat monthFormat;
     ImageView lastMonthBtn;
@@ -56,6 +57,7 @@ public class MonthView extends RelativeLayout {
 
     public void setupView(Date today, String monthFormat) {
         current = today;
+        calendar = Calendar.getInstance();
         this.monthFormat = new SimpleDateFormat(monthFormat, Locale.US);
 
         setupMonthPicker();
@@ -87,8 +89,6 @@ public class MonthView extends RelativeLayout {
 
         viewPager = findViewById(R.id.month_pager);
 
-        Calendar calendar = Calendar.getInstance();
-
         lastMonth = LayoutInflater.from(getContext()).inflate(R.layout.month_pager_view, (ViewGroup)getRootView(), false);
         calendar.setTime(current);
         calendar.add(Calendar.MONTH, -1);
@@ -111,18 +111,15 @@ public class MonthView extends RelativeLayout {
 
     private void setupDayView() {
         //Last
-        Calendar calendar = Calendar.getInstance();
         calendar.setTime(current);
         calendar.add(Calendar.MONTH, -1);
         newDayView(lastMonth, calendar);
 
         //Current
-        calendar = Calendar.getInstance();
         calendar.setTime(current);
         newDayView(currentMonth, calendar);
 
         //Next
-        calendar = Calendar.getInstance();
         calendar.setTime(current);
         calendar.add(Calendar.MONTH, 1);
         newDayView(nextMonth, calendar);
@@ -172,7 +169,6 @@ public class MonthView extends RelativeLayout {
     }
 
     public void lastMonth() {
-        Calendar calendar = Calendar.getInstance();
         calendar.setTime(current);
         calendar.add(Calendar.MONTH, -1);
         current = calendar.getTime();
@@ -193,7 +189,6 @@ public class MonthView extends RelativeLayout {
     }
 
     public void nextMonth() {
-        Calendar calendar = Calendar.getInstance();
         calendar.setTime(current);
         calendar.add(Calendar.MONTH, 1);
         current = calendar.getTime();
